@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 .blue_container {
   background-color: #024059;
 }

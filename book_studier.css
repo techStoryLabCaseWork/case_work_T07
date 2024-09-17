@@ -171,4 +171,38 @@
     width: auto;
     height: 474px;
   }
+
+  /* 1.section */
+
+  .studier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+
+  .studier__image {
+    display: grid;
+    grid-column: 2;
+  }
+
+  .studier__title {
+    background-color: white;
+    color: #233249;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .info__grid {
+    padding: 5rem 0;
+  }
+
+  .info__titel {
+    margin-bottom: 1rem;
+  }
+
+  .info__beskrivelse {
+    line-height: 30px;
+  }
 }

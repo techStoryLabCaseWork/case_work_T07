@@ -1,23 +1,33 @@
+
+/******* HEROSECTION *******/
 img {
     width: 100%;
 }
 
 .herosection_img{
     height: 200px;
-    width: 100%;
+    width: 110%;
     object-fit: cover;
     overflow: hidden;
 }
 
 .logo {
-    position: absolute;
-    top: -100px;  
-    left: 160px; 
-    transform: scale(0.4);
+    position: absolute;  
+    top: 110px;
+    left: 395px; 
+    height: 100px;
+    width: 100px;
 }
 
+.info_tekst{
+   padding-top: 10px;
+   
+}
+
+
+/******* PRODUKTLISTE ********/
 .produktliste_billede{
-    transform: scale(0.9);
+    transform: scale(0.8);
 }
 
 .produktliste_produkt{
@@ -53,9 +63,9 @@ h2 {
 
     .logo {
         position: absolute;
-        top: -350px;  
-        left: 600px; 
-        transform: scale(0.2);
+        left: 1100px; 
+        height: 363px;
+        width: 363px;
     }
 
 

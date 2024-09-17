@@ -4,9 +4,20 @@ img {
     width: 100%;
 }
 
+.hero-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.herosection_img {
+    margin: 0;
+    padding: 0;
+}
+
 .herosection_img{
+    transform: scale(1.18);
     height: 200px;
-    width: 110%;
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
 }
@@ -21,7 +32,7 @@ img {
 
 .info_tekst{
    padding-top: 10px;
-   
+   padding-bottom: 20px;
 }
 
 
@@ -63,9 +74,10 @@ h2 {
 
     .logo {
         position: absolute;
-        left: 1100px; 
-        height: 363px;
-        width: 363px;
+        top: 215px;
+        left: 1200px; 
+        height: 250px;
+        width: 250px;
     }
 
 

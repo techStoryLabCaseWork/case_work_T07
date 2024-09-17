@@ -127,41 +127,6 @@
   margin-left: 75px;
 }
 
-/*************************************** footer************************************** */
-.footer {
-  background-color: #233249;
-  color: white;
-  padding: 16px;
-}
-
-.footer h2 {
-  color: white;
-  line-height: 20px;
-  font-size: 18px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.footer h3 {
-  color: white;
-  font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: "Roboto", sans-serif;
-  padding: 16px;
-}
-
-.footer p {
-  color: white;
-}
-.footer li {
-  color: white;
-  font-size: 14px;
-  padding-left: 16px;
-  font-family: "Roboto", sans-serif;
-  line-height: 30px;
-}
-
 /* ****************For DESKTOP */
 @media (min-width: 750px) {
   .studier__image {
@@ -170,39 +135,5 @@
     margin-right: auto;
     width: auto;
     height: 474px;
-  }
-
-  /* 1.section */
-
-  .studier {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-  }
-
-  .studier__image {
-    display: grid;
-    grid-column: 2;
-  }
-
-  .studier__title {
-    background-color: white;
-    color: #233249;
-    align-items: center;
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .info__grid {
-    padding: 5rem 0;
-  }
-
-  .info__titel {
-    margin-bottom: 1rem;
-  }
-
-  .info__beskrivelse {
-    line-height: 30px;
   }
 }

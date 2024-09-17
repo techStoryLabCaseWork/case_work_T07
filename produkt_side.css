@@ -1,11 +1,34 @@
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .blue_container {
   background-color: #024059;
+  color: white;
+  padding: 40px;
+}
+
+.info__produkt_side {
+  background-color: #f2c4da;
+  color: #024059;
+  padding: 40px 0;
+  line-height: 2;
 }
 
 .pink_container {
   background-color: #f2c4da;
+  height: 70px;
+}
+
+ul {
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: white;
 }

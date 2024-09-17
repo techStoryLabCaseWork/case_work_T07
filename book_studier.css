@@ -1,0 +1,177 @@
+.studier__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.studier__titler {
+  margin-top: 50rem;
+}
+
+/* Photo studio */
+.info__grid {
+  padding: 2rem 0;
+}
+
+.info__titel {
+  margin-bottom: 1rem;
+}
+
+.info__beskrivelse {
+  line-height: 30px;
+}
+
+.product-list__title {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-list__column-1-1 {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+/***************************** Foto size********************* */
+.product-list__image {
+  width: 150px;
+  height: auto;
+  margin-left: 75px;
+}
+
+/* studie beskrivelse */
+.product-list__beskrivelse {
+  line-height: 30px;
+  margin-right: 10px;
+  width: 190px;
+}
+
+/* Book cta */
+.cta_book {
+  width: 142px;
+  height: 40px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #f28dbc;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 2px;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.cta_book:hover {
+  background-color: #f2c4da;
+  color: white;
+  text-decoration: none;
+}
+
+.cta_book:visited {
+  color: white;
+}
+
+.cta_book:active {
+  color: white;
+}
+
+/* Linje design */
+.linje {
+  border: none;
+  height: 2px;
+  background-color: #f2c4da;
+  width: 96%;
+  margin: 16px auto;
+}
+
+/*********************************** eye tracking studio**************************** */
+.product-list__column-2-1 {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.product-list__beskrivelse-2 {
+  line-height: 30px;
+  margin-right: 5px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.product-list__image-2 {
+  width: 200px;
+  height: auto;
+  margin-left: 75px;
+}
+
+/************************ Podcast studio**************************************** */
+.product-list__column-3-1 {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.product-list__beskrivelse-3 {
+  line-height: 30px;
+  margin-right: 5px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.product-list__image-3 {
+  width: 200px;
+  height: auto;
+  margin-left: 75px;
+}
+
+/*************************************** footer************************************** */
+.footer {
+  background-color: #233249;
+  color: white;
+  padding: 16px;
+}
+
+.footer h2 {
+  color: white;
+  line-height: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer h3 {
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 16px;
+}
+
+.footer p {
+  color: white;
+}
+.footer li {
+  color: white;
+  font-size: 14px;
+  padding-left: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+}
+
+/* ****************For DESKTOP */
+@media only screen and (min-width: 768px) {
+  .studier__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 474px;
+  }
+
+  .studier__title {
+  }
+}

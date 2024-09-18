@@ -41,6 +41,7 @@ img.img__container {
 }
 
 .info_index_navigation {
+  padding-left: 0;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -60,6 +61,7 @@ img.img__container {
   background-color: #024059;
   border: none;
   color: #fff;
+  margin-bottom: 1rem;
 }
 
 .category__wrapper {
@@ -138,7 +140,7 @@ img.img__container {
 }
 
 /*DESKTOP*/
-@media screen and (min-width: 750px) and (max-width: 1199px) {
+@media screen and (min-width: 750px) {
   .info__headline h1 {
     background-color: #f2c4da;
     color: #024059;
@@ -148,11 +150,15 @@ img.img__container {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
   }
-  .info_index p {
-    grid-column: 1;
+  .info_index_navigation {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
   }
   .btn__acces_lab {
     grid-column: 1;
     grid-row: 2;
+    align-self: center;
+    margin-left: 1rem;
   }
 }

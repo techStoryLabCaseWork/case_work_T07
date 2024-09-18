@@ -37,6 +37,19 @@
   align-items: center;
 }
 
+.logo {
+  position: absolute;
+  top: 110px;
+  left: 90%;
+  transform: translateX(-50%);
+  height: 100px;
+  width: 100px;
+}
+
+.logo2 {
+  display: none;
+}
+
 /***************************** Foto size********************* */
 .product-list__image {
   width: 150px;
@@ -155,6 +168,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+
+  .logo {
+    top: 300px;
+    height: 250px;
+    width: 250px;
+    z-index: 3;
+    position: absolute;
+  }
+
+  .logo2 {
+    display: block; /* Vis logoet på desktop */
+    height: 300px;
+    width: 300px;
+    padding-right: 40px;
+    padding-top: 100px;
   }
 
   .studier__image {

@@ -127,4 +127,42 @@ img {
     display: none; 
 }
 
+ /* Footer DESKTOP */
+
+ .footer {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .footer h3 {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .footer p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .top_kolon {
+    grid-column: 1;
+  }
+
+  .top_2 {
+    grid-column: 1;
+  }
+
+  .kolon_1 {
+    grid-column: 1;
+  }
+  .kolon_2 {
+    grid-column: 2;
+  }
+  .kolon_3 {
+    grid-column: 3;
+  }
+
+
 }

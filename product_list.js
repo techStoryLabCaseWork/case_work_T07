@@ -17,27 +17,42 @@ fetch(`${supaBase}/tech_story_lab_casework?select=Type,brand,Taksonomi`, {
 function showData(items) {
     // Log the items for debugging
     console.log(items);
-    
+
     // Select the container where you want to append the articles
     const container = document.querySelector('#produkt-liste-container');
-    
+
     // Get the template
     const template = document.querySelector('#produkt-skabelon');
-    
-    // Loop through each item from the fetched data
-    items.forEach(item => {
-        // Clone the template content
-        const clone = template.content.cloneNode(true);
-        
-        // Populate the template with data from the item
-        clone.querySelector('.kategori-titel').textContent = item.Type || "No type available";
-        clone.querySelector('.produkt-overskrift').textContent = item.brand || "No brand available";
-        clone.querySelector('.produkt-beskrivelse').textContent = item.Taksonomi || "No description available";
-        
-        // Optionally, set an image src (if your data includes images)
-        // clone.querySelector('.produkt-billede').src = item.image || "default-image.jpg";
-        
-        // Append the cloned template to the container
-        container.appendChild(clone);
+
+    // Filter items to show only those with "Camera with Lens"
+    const filteredItems = items.filter(item => item.Type === "Camera with Lens");
+
+    // Create a map to keep track of how many products per brand have been shown
+    const brandCount = {};
+
+    // Loop through each filtered item
+    filteredItems.forEach(item => {
+        // If we have shown less than 2 products for this brand, proceed
+        if (!brandCount[item.brand]) {
+            brandCount[item.brand] = 0;  // Initialize count for this brand
+        }
+
+        if (brandCount[item.brand] < 2) {
+            // Clone the template content
+            const clone = template.content.cloneNode(true);
+
+            // Populate the template with data from the item
+            clone.querySelector('.produkt-overskrift').textContent = item.brand || "No brand available";
+            clone.querySelector('.produkt-beskrivelse').textContent = item.Taksonomi || "No description available";
+            
+            // Optionally, set an image src (if your data includes images)
+            // clone.querySelector('.produkt-billede').src = item.image || "default-image.jpg";
+
+            // Append the cloned template to the container
+            container.appendChild(clone);
+
+            // Increment the count for this brand
+            brandCount[item.brand]++;
+        }
     });
 }

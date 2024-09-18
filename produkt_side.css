@@ -33,26 +33,47 @@ ul li {
   color: white;
 }
 
-/* General header styling */
+/*********** General header & nav styling ***********/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f6f0e9;
+  background-color: #024059;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
-  width: 100%; /* Ensure the header spans the full width */
-  z-index: 1000; /* Ensure the header stays on top of other elements */
-  padding: 0 20px; /* Add padding for better spacing */
-  box-sizing: border-box; /* Ensure padding doesn't affect the total width */
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-/* Logo styling */
 .logo img {
   width: 120px;
   height: auto;
-  padding: 10px 0; /* Adjust padding to center vertically */
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.burger,
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  margin-left: 15px;
+}
+
+.search img {
+  width: 40px;
+  height: auto;
+  padding: 10px 0;
 }
 
 /* Navigation styling */
@@ -84,7 +105,7 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: #333;
+  color: #f2c4da;
   text-decoration: none;
   transition: color 0.3s;
   text-align: center; /* Center align text for better appearance */
@@ -96,7 +117,7 @@ nav {
 
 /* Menu link hover effect */
 .menu a:hover {
-  color: #98a360;
+  color: #f2c4da;
 }
 
 /* Burger menu icon styling */
@@ -112,7 +133,7 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #333;
+  background-color: #f9eeee;
   transition: 0.2s linear;
 }
 
@@ -120,18 +141,18 @@ nav {
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
-    flex-direction: column; /* Stack menu items vertically */
-    width: 100%; /* Full width for dropdown */
-    background-color: #f6f3f0; /* Background color for dropdown */
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6f3f0;
     position: absolute;
-    top: 60px; /* Position below header */
+    top: 60px;
     left: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 999; /* Ensure menu appears above other elements */
+    z-index: 999;
   }
 
   .burger {
-    display: flex; /* Display burger icon */
+    display: flex;
   }
 
   .burger.active .line:nth-child(1) {
@@ -147,16 +168,16 @@ nav {
   }
 
   nav.active .menu {
-    display: flex; /* Display menu when burger is active */
+    display: flex;
   }
 
   nav.active .menu li {
-    margin: 10px 0; /* Margin for individual items */
-    text-align: center; /* Center align items */
+    margin: 10px 0;
+    text-align: center;
   }
 
   nav.active .menu a {
-    font-size: 1.2rem; /* Adjust font size for better readability */
+    font-size: 1.2rem;
   }
 }
 
@@ -178,7 +199,7 @@ nav a::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #98a360;
+  background-color: #f2c4da;
   transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   transform: scaleX(0);
 }
@@ -189,59 +210,4 @@ nav a:hover {
 
 nav a:hover::after {
   transform: scaleX(1);
-}
-
-/* CTA */
-.book_tid_cta {
-  display: block;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.book_tid_cta_1 {
-  border: 2px solid #98a360;
-  border-radius: 3em;
-  display: inline-block;
-  font-family: "Old Standard TT", serif;
-  font-size: 1em;
-  text-decoration: none;
-  padding: 1em 2em;
-  width: auto;
-}
-
-.book_tid_cta_1 {
-  background-color: #f6f0e9;
-  stroke: #98a360;
-  color: black !important;
-}
-
-.book_tid_cta_1:hover {
-  background-color: #98a360;
-}
-
-.book_tid_cta_2 {
-  display: block;
-  text-align: center;
-  margin-top: -10px;
-}
-
-.book_tid_cta_2 {
-  border: 2px solid #98a360;
-  border-radius: 3em;
-  display: inline-block;
-  font-family: "Old Standard TT", serif;
-  font-size: 1em;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  width: auto;
-}
-
-.book_tid_cta_2 {
-  background-color: #f6f0e9;
-  stroke: #98a360;
-  color: black !important;
-}
-
-.book_tid_cta_2:hover {
-  background-color: #0000;
 }

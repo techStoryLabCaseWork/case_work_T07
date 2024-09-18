@@ -3,33 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styletile.css" />
+    <link rel="stylesheet" href="produkt_side.css" />
     <title>Produkt side</title>
   </head>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="produkt_fotos/logo.webp" alt="logo" />
+      </a>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="product_list.html"><b>Kategori</b></a>
+        </li>
+        <li>
+          <a href="book_studier.html"><b>Studier</b></a>
+        </li>
+        <li>
+          <a href="priser.html"><b>Kurser</b></a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="search">
+        <img src="produkt_fotos/search.webp" alt="Billede af søgemaskine" />
+      </div>
+    </nav>
+  </header>
   <body>
+    <img src="produkt_fotos/Canon .webp" alt="Et billede af et Canon kamera" />
     <h1>Canon 10</h1>
-    <img src="" alt="" />
-    <h2>Info</h2>
-    <p>
-      H1 Canon 10 er god til at fotografere fugle. Den Fanger dem altid lige når
-      de letter. Husk udstyret er dit ansvar.
-    </p>
-    <h2>Det her får du med</h2>
-    <img src="" alt="" />
-    <ul>
-      <li>1 x Kamera</li>
-      <li>1 x SD Card</li>
-      <li>1 x Mikrofon</li>
-      <li>1 x Shotgun Mikrofon</li>
-      <li>1 x Oplader</li>
-      <li>1 x Fjernbetjening</li>
-    </ul>
-    <h2>Har du tænkt på?</h2>
-    <h3>Tripod</h3>
-    <img src="" alt="" />
-    <h3>Mikrofon</h3>
-    <img src="" alt="" />
-    <h3>Optager</h3>
-    <img src="" alt="" />
-    <h2>test</h2>
+    <div class="info__produkt_side">
+      <h2>Info</h2>
+      <p>
+        H1 Canon 10 er god til at fotografere fugle. Den Fanger dem altid lige
+        når de letter.
+      </p>
+      <p>Husk udstyret er dit ansvar.</p>
+    </div>
+    <div class="blue_container">
+      <h1>Det her får du med</h1>
+      <div class="grid_container">
+        <img
+          src="produkt_fotos/kamera_udstyr.webp"
+          alt="Et billede af kameraudstyr"
+        />
+        <ul>
+          <li>1 x Kamera</li>
+          <li>1 x SD Card</li>
+          <li>1 x Mikrofon</li>
+          <li>1 x Shotgun Mikrofon</li>
+          <li>1 x Oplader</li>
+          <li>1 x Fjernbetjening</li>
+        </ul>
+      </div>
+    </div>
+    <div class="nederst__pink_container">
+      <h4>Har du tænkt på?</h4>
+    </div>
+    <div class="produkter">
+      <div class="produkt">
+        <h2>VR</h2>
+        <img
+          src="produkt_fotos/røde_mikro.webp"
+          alt="Et billede af en tripod"
+        />
+      </div>
+      <div class="produkt">
+        <h2>MIKROFON</h2>
+        <img
+          src="produkt_fotos/røde_mikro.webp"
+          alt="Et billede af en mikrofon"
+        />
+      </div>
+      <div class="produkt">
+        <h2>LYD</h2>
+        <img src="produkt_fotos/røde_mikro.webp" alt="Et billede af kamera" />
+      </div>
+    </div>
+    <div class="newsletter-signup">
+      <p>Tilmeld dig vores nyhedsmail med nyheder, kampagner og meget mere.</p>
+      <form action="#" method="post">
+        <input type="email" placeholder="Din e-mail" required />
+        <button type="submit">Tilmeld</button>
+      </form>
+    </div>
+    <footer class="footer">
+      <h2>KEA - Københavns Erhvervsakademi</h2>
+      <div class="top_kolon">
+        <p>Guldbergsgade 29N</p>
+        <p>2200 København N</p>
+      </div>
+      <div class="top_2">
+        <h3>Du skal ikke bare vide. Du skal kunne.</h3>
+      </div>
+
+      <div class="kolon_1">
+        <h2>Vejledning</h2>
+        <ul>
+          <li>Studieadministrationen</li>
+          <li>Studie- og Karrierevejledning</li>
+          <li>SPS (specialpædagogisk støtte)</li>
+          <li>SU-vejledning</li>
+          <li>Praktik</li>
+        </ul>
+      </div>
+
+      <div class="kolon_2">
+        <h2>Relevante links</h2>
+        <ul>
+          <li>KEA Webmail</li>
+          <li>KEA Bibliotek</li>
+          <li>Itslearning</li>
+          <li>Fag- og modulkatalog</li>
+          <li>Studieaktivitetsmodel</li>
+          <li>PARIS-aftalen</li>
+          <li>Ordensregler</li>
+        </ul>
+      </div>
+
+      <div class="kolon_3">
+        <h2>Praktisk info</h2>
+        <ul>
+          <li>Cookies og privatliv</li>
+          <li>Persondatapolitik</li>
+          <li>Tilgængelighedserklæring</li>
+          <li>Find vej på KEA</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="produkt_side.js"></script>
   </body>
 </html>

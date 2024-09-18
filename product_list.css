@@ -1,0 +1,337 @@
+/******* HEROSECTION *******/
+img {
+  width: 100%;
+}
+
+.hero-container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px; /* Adjust this value to match the height of your header */
+}
+
+.herosection_img {
+  transform: scale(1.18);
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  position: absolute;  
+  top: 110px;
+  left: 90%;
+  transform: translateX(-50%);
+  height: 100px;
+  width: 100px;
+}
+
+.logo2 {
+  display: none;
+}
+
+.info_tekst {
+ padding: 10px 0 20px;
+ padding-left: 16px;
+ width: 90%;
+ line-height: 30px;
+}
+
+/******* PRODUKTLISTE ********/
+.produktliste_billede {
+  transform: scale(0.8);
+  display: grid;
+  grid-column: 2;
+}
+
+.produkt_single_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.produkt-beskrivelse {
+  display: grid;
+  grid-column: 1;
+}
+
+.cta {
+  grid-column: 2;
+  width: 200px;
+}
+
+.custom-line {
+  width: 90%; 
+  margin: 20px auto; 
+  border: none;
+  border-top: 2px solid #F28DBC; 
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 750px) {
+  .herosection_img {
+      height: 450px;
+      display: grid;
+      grid-column: 2;
+  }
+
+  .logo {
+      display: none;
+  }
+
+  .logo2 {
+      display: block; /* Vis logoet på desktop */
+      height: 300px;
+      width: 300px;
+      padding-right: 40px;
+      padding-top: 100px;
+  }
+
+  .info {
+      display: grid;
+      grid-template-columns: 1fr auto;
+  }
+
+  .toppen {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+  }
+
+  .produktliste_overskrift2 {
+      background-color: white;
+      color: #024059;
+      display: grid;
+      grid-column: 1;
+      grid-row: 1;
+      align-items: center;
+  }
+
+  .info_tekst {
+      padding-bottom: 70px;
+      width: 60%;
+      line-height: 50px;
+      padding-left: 26px;
+  }
+
+  .produkt_single_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      align-items: center;
+      padding-top: 20px;
+  }
+
+  .custom-line {
+      display: none; 
+  }
+
+  /* Footer DESKTOP */
+  .footer {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+  }
+
+  .footer h3 {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  .footer p {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  .top_kolon {
+      grid-column: 1;
+  }
+
+  .top_2 {
+      grid-column: 1;
+  }
+
+  .kolon_1 {
+      grid-column: 1;
+  }
+  .kolon_2 {
+      grid-column: 2;
+  }
+  .kolon_3 {
+      grid-column: 3;
+  }
+}
+
+/******************* General header & nav styling ************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #024059;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.burger,
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  margin-left: 15px;
+}
+
+.search img {
+  width: 40px;
+  height: auto;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensure navigation spans the full width */
+  justify-content: flex-end; /* Align menu to the right */
+}
+
+/* Menu list styling */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu list item styling */
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+/* Menu link styling */
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #fff2f8;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center; /* Center align text for better appearance */
+  font-family: "Prosto One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* Menu link hover effect */
+.menu a:hover {
+  color: #f2c4da;
+}
+
+/* Burger menu icon styling */
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #f9eeee;
+  transition: 0.2s linear;
+}
+
+/* Responsive styling for burger menu and dropdown */
+@media screen and (max-width: 800px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #f6f3f0;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+  }
+
+  .burger {
+      display: flex;
+  }
+
+  .burger.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.active .line:nth-child(2) {
+      opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  nav.active .menu {
+      display: flex;
+  }
+
+  nav.active .menu li {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  nav.active .menu a {
+      font-size: 1.2rem;
+  }
+}
+
+/* General link styling */
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f2c4da;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: scaleX(0);
+}
+
+nav a:hover {
+  color: #98a360;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}

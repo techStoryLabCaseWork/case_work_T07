@@ -24,6 +24,10 @@ img {
     width: 100px;
 }
 
+.logo2 {
+    display: none;
+}
+
 .info_tekst {
    padding: 10px 0 20px;
    padding-left: 16px;
@@ -34,17 +38,21 @@ img {
 /******* PRODUKTLISTE ********/
 .produktliste_billede {
     transform: scale(0.8);
+    display: grid;
+    grid-column: 2;
 }
 
-.produktliste_produkt {
+.produkt_single_grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 30px;
     align-items: center;
+    padding-top: 20px;
 }
 
-.produkt_overskrift{
-    padding-top:40px ;
+
+.produkt-beskrivelse{
+    display: grid;
+    grid-column: 1;
 }
 
 .cta {
@@ -68,12 +76,21 @@ img {
     }
 
     .logo {
-        top: 300px;
-        height: 250px;
-        width: 250px;
-        z-index: 3;
-        position: absolute;
+        display: none;
     }
+
+    .logo2 {
+        display: block; /* Vis logoet på desktop */
+        height: 300px;
+        width: 300px;
+        padding-right: 40px;
+        padding-top: 100px;
+      }
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
 
     .toppen {
         display: grid;
@@ -81,7 +98,7 @@ img {
         grid-template-rows: 1fr;
     }
 
-
+/******* PRODUKTLISTE ********/
 
     .produktliste_overskrift2 {
         background-color: white;
@@ -99,10 +116,15 @@ img {
         padding-left: 26px;
     }
 
+.produkt_single_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-top: 20px;
+}
 
+.custom-line {
+    display: none; 
+}
 
-    .produktliste_kategorier {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }

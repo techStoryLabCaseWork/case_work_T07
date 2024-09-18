@@ -12,63 +12,74 @@
 </head>
 <body>
     <main>
-        <div class="toppen">
+        <section class="toppen">
             <div class="hero-container">
                 <img class="herosection_img" src="produkt_fotos/produktliste_herosection2.webp" alt="herosection">
                 <img class="logo" src="Logo_Tech&Story.svg" alt="TSL_logo">
             </div>
+            <h1 class="produktliste_overskrift2">Foto, Lyd & Video</h1>
+        </section>
 
-            <div class="produktliste_overskrift">
-                <h1 class="produktliste_overskrift2">Foto, Lyd & Video</h1>
-            </div>
-        </div>
-        <div class="info">
+        <section class="info">
             <h2>Info</h2>
             <p class="info_tekst">
                 Her finder du alt lige fra forskellige kameraer, objektiver og stabilisatorer til diverse tripods, mikrofoner og lysudstyr. Hvad enten du er på udkig efter grej til fx portræt- og produktbilleder, interviews eller podcasts, har vi alt, du har brug for.<br/>
-                <br/>
                 Udstyr reserveres ved henvendelse i Tech & Story Lab. <br/>
                 Ved reservation medbring dit personlig studiekort.
             </p>
-        </div>
+        </section>
 
-        <div class="produktliste_kategorier">
-            <div>
-                <h1>Kameraer</h1>
+        <div id="produkt-liste-container"></div>
 
-                <h2>Sony 10d</h2>
-                <div class="produktliste_produkt">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsa quos officia neque mollitia hic sit pariatur repellendus atque culpa nulla ex, voluptatibus recusandae, excepturi, ipsum beatae. </p>
-                    <img class="produktliste_billede" src="produkt_fotos/sony_kamera.webp" alt="sony 10d">
+        <template id="produkt-skabelon">
+            <article>
+                <h1 class="kategori-titel"></h1>
+                <h2 class="produkt-overskrift"></h2>
+                <div class="produktliste-produkt">
+                    <p class="produkt-beskrivelse"></p>
+                    <img class="produkt-billede" src="" alt="">
                     <h3 class="cta">Læs mere</h3>
                 </div>
                 <hr class="custom-line">
-            </div>
+            </article>
+        </template>
 
-            <div>
-                <h1>Lyd</h1>
-
-                <h2>RØDE Mikrofon</h2>
-                <div class="produktliste_produkt">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsa quos officia neque mollitia hic sit pariatur repellendus atque culpa nulla ex, voluptatibus recusandae, excepturi, ipsum beatae. </p>
-                    <img class="produktliste_billede" src="produkt_fotos/røde_mikro.webp" alt="RØDE Mikrofon">
-                    <h3 class="cta">Læs mere</h3>
-                </div>
-                <hr class="custom-line">
-            </div>
-
-            <div>
-                <h1>Tilbehør</h1>
-
-                <h2>Tripod</h2>
-                <div class="produktliste_produkt">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsa quos officia neque mollitia hic sit pariatur repellendus atque culpa nulla ex, voluptatibus recusandae, excepturi, ipsum beatae. </p>
-                    <img class="produktliste_billede" src="produkt_fotos/tripod.webp" alt="Tripod">
-                    <h3 class="cta">Læs mere</h3>
-                </div>
-                <hr class="custom-line">
-            </div>
-        </div>
     </main>
+    <script src="product_list.js"></script>
+
+
+    <footer class="footer">
+        <h2>KEA - Københavns Erhvervsakademi</h2>
+        <p>Guldbergsgade 29N, 2200 København N</p>
+        <h2>Du skal ikke bare vide. Du skal kunne.</h2>
+
+        <h2>Vejledning</h2>
+        <ul>
+            <li>Studieadministrationen</li>
+            <li>Studie- og Karrierevejledning</li>
+            <li>SPS (specialpædagogisk støtte)</li>
+            <li>SU-vejledning</li>
+            <li>Praktik</li>
+        </ul>
+
+        <h2>Relevante links</h2>
+        <ul>
+            <li>KEA Webmail</li>
+            <li>KEA Bibliotek</li>
+            <li>Itslearning</li>
+            <li>Fag- og modulkatalog</li>
+            <li>Studieaktivitetsmodel</li>
+            <li>PARIS-aftalen</li>
+            <li>Ordensregler</li>
+        </ul>
+
+        <h2>Praktisk info</h2>
+        <ul>
+            <li>Cookies og privatliv</li>
+            <li>Persondatapolitik</li>
+            <li>Tilgængelighedserklæring</li>
+            <li>Find vej på KEA</li>
+        </ul>
+    </footer>
 </body>
 </html>

@@ -9,51 +9,47 @@ img {
 }
 
 .herosection_img {
-    margin: 0;
-    padding: 0;
-}
-
-.herosection_img{
     transform: scale(1.18);
     height: 200px;
     width: 100%;
     object-fit: cover;
-    overflow: hidden;
 }
 
 .logo {
     position: absolute;  
     top: 110px;
-    left: 395px; 
+    left: 90%;
+    transform: translateX(-50%);
     height: 100px;
     width: 100px;
 }
 
-.info_tekst{
-   padding-top: 10px;
-   padding-bottom: 20px;
+.info_tekst {
+   padding: 10px 0 20px;
+   padding-left: 16px;
    width: 90%;
    line-height: 30px;
 }
 
-
 /******* PRODUKTLISTE ********/
-.produktliste_billede{
+.produktliste_billede {
     transform: scale(0.8);
 }
 
-.produktliste_produkt{
+.produktliste_produkt {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 30px;
+    align-items: center;
 }
 
-h2 {
-    padding-top: 20px;
+.produkt_overskrift{
+    padding-top:40px ;
 }
 
 .cta {
     grid-column: 2;
+    width: 200px;
 }
 
 .custom-line {
@@ -63,25 +59,20 @@ h2 {
     border-top: 2px solid #F28DBC; 
 }
 
-
-
 /* MEDIA QUERIES */
 @media (min-width: 750px) {
     .herosection_img {
         height: 450px;
-        width: 100%;
-        object-fit: cover;
-        overflow: hidden;
+        display: grid;
+        grid-column: 2;
     }
 
     .logo {
-        z-index: 10 !important;  
-        position: absolute;
-        top: 300px;  
-        left: 50%;
-        transform: translateX(-50%);
+        top: 300px;
         height: 250px;
         width: 250px;
+        z-index: 3;
+        position: absolute;
     }
 
     .toppen {
@@ -90,42 +81,28 @@ h2 {
         grid-template-rows: 1fr;
     }
 
-    .hero-container {
-        display: grid;
-        grid-column: 2;
-    }
 
-    .produktliste_overskrift {
-        align-items: center;
-        display: grid;
-        grid-column: 1;
-        grid-row: 1;
-    }
 
     .produktliste_overskrift2 {
         background-color: white;
         color: #024059;
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+        align-items: center;
     }
 
     .info_tekst {
-        z-index: 8;
-        padding-top: 20px;
         padding-bottom: 70px;
         width: 60%;
         line-height: 50px;
-        position: relative;
+        padding-left: 26px;
     }
+
+
 
     .produktliste_kategorier {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
-    .custom-line {
-        width: 80%;
-        margin: 20px auto;
-        border: none;
-        border-top: 2px solid #F28DBC;
-    }
 }
-

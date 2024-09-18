@@ -56,3 +56,21 @@ function showData(items) {
         }
     });
 }
+
+
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+const menu = document.querySelector(".menu");
+const links = document.querySelectorAll(".menu li a");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  menu.classList.toggle("active"); // Brug 'menu' i stedet for 'nav'
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    burger.classList.remove("active");
+    menu.classList.remove("active"); // Luk også 'menu' når link er klikket
+  });
+});

@@ -16,11 +16,6 @@ img {
   line-height: 2;
 }
 
-.pink_container {
-  background-color: #f2c4da;
-  height: 70px;
-}
-
 .nederst__pink_container {
   background-color: #f2c4da;
   height: 70px;
@@ -71,6 +66,37 @@ ul {
 ul li {
   margin-bottom: 10px;
   color: white;
+}
+
+@media (min-width: 750px) {
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  .grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .blue_container img {
+    max-width: 60%;
+    height: auto;
+  }
+
+  .blue_container ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+    font-size: 30px;
+  }
+
+  .blue_container ul li {
+    margin-bottom: 10px;
+  }
 }
 
 /******************* General header & nav styling ************************/
@@ -126,7 +152,6 @@ nav {
 
 /* Menu list styling */
 .menu {
-  font-weight: bold;
   display: flex;
   list-style: none;
   margin: 0;

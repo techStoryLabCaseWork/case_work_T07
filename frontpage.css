@@ -16,7 +16,7 @@ header {
 .search {
   display: flex;
   align-items: center;
-  margin-left: 300px;
+  margin-left: 280px;
 }
 
 .search {
@@ -171,6 +171,8 @@ h5 {
   color: #f28dbc;
 }
 
+
+
 .cta_2 {
   width: auto;
   height: 40px;
@@ -275,6 +277,10 @@ a {
   width: 100%;
 }
 
+.cta{
+  margin-top: 80px;
+}
+
 .btn__category {
   margin-top: 2rem;
   margin-bottom: 0;
@@ -361,6 +367,15 @@ a {
 /* Contact info */
 .contact__info {
   margin-bottom: 3rem;
+  list-style: none;
+}
+
+
+.info__1, .info__2, .info__3{
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .contact__container ul {
@@ -402,6 +417,53 @@ a {
   grid-row: 3;
 }
 
+.map__container{
+  margin-left: 90px;
+}
+
+.newsletter-signup {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.newsletter-signup p {
+  font-size: 20px;
+  color: #024059;
+  margin-bottom: 15px;
+}
+
+.newsletter-signup form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter-signup input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+
+.newsletter-signup button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f28dbc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.newsletter-signup button:hover {
+  background-color: #e0a0bb;
+}
+
 /* Media Queries */
 @media screen and (min-width: 768px) {
   .burger {
@@ -440,9 +502,14 @@ a {
     grid-template-rows: 1fr 1fr;
   }
 
+  .map__container{
+    margin-left: 550px;
+  }
+  
+
   h5 {
     padding: 20px;
-    font-size: 67px;
+    font-size: 58px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -489,6 +556,10 @@ a {
     left: 20px;
     background-color: #024059;
     font-family: "Roboto", sans-serif;
+  }
+
+  .item__line{
+    display: none;
   }
 
   .cta_2 {

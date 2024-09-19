@@ -1,3 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
 .studier__image {
   display: block;
   margin-left: auto;
@@ -25,6 +40,7 @@
 .logo2 {
   display: none;
 }
+
 
 /* Photo studio */
 .info__grid {
@@ -306,6 +322,24 @@ header {
   z-index: 1000; /* Ensure the header is above other content */
 }
 
+.kea_logo a {
+  text-decoration: none;
+  border-bottom: none;
+  color: white;
+}
+
+.kea_logo{
+  overflow-x: visible;
+  position: relative; 
+  z-index: 1; 
+  
+}
+
+
+.kea_logo :hover {
+  color: #f28dbc;; 
+}
+
 
 .burger,
 .search {
@@ -464,4 +498,49 @@ nav a:hover {
 
 nav a:hover::after {
   transform: scaleX(1);
+}
+
+/*********************** Newsletter input **************************/
+
+.newsletter-signup {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.newsletter-signup p {
+  font-size: 20px;
+  color: #024059;
+  margin-bottom: 15px;
+}
+
+.newsletter-signup form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter-signup input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+
+.newsletter-signup button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f28dbc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.newsletter-signup button:hover {
+  background-color: #e0a0bb;
 }

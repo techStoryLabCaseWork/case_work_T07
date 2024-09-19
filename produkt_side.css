@@ -113,6 +113,16 @@ header {
   box-sizing: border-box;
 }
 
+.kea_logo a {
+  text-decoration: none;
+  border-bottom: none;
+  color: white;
+}
+
+.kea_logo :hover {
+  color: #f28dbc;; 
+}
+
 .logo img {
   width: 120px;
   height: auto;

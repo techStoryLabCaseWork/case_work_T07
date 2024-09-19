@@ -119,6 +119,14 @@ header {
   color: white;
 }
 
+h5{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 67px;
+  padding: 20px;
+}
+
 .kea_logo :hover {
   color: #f28dbc;; 
 }

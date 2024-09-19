@@ -8,7 +8,29 @@
     <title>Home</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="product_list.html"><b>Kategori</b></a>
+          </li>
+          <li>
+            <a href="book_studier.html"><b>Studier</b></a>
+          </li>
+          <li>
+            <a href="priser.html"><b>Kurser</b></a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="search">
+          <img src="produkt_fotos/search.webp" alt="Billede af søgemaskine" />
+        </div>
+      </nav>
+    </header>
     <main>
       <article class="img__container">
         <img
@@ -42,20 +64,22 @@
             <img src="Logo_Tech&Story.svg" alt="tech & Story Lab Logo" />
           </div>
           <div class="btn__acces">
-            <button class="btn__acces_lab">Adgang til lab</button>
+            <a href="book_studier.html" class="btn__acces_lab">
+              Adgang til lab
+            </a>
           </div>
         </div>
       </section>
       <h1>Kategorier</h1>
       <section class="category__container">
-        <article class="item">
+        <article class="item item_1">
           <div class="item__headline">
             <h3>Foto, Lyd & Video</h3>
             <div class="btn__category">
               <button class="cta">Læs mere</button>
             </div>
           </div>
-          <div class="category__image">
+          <div class="category__image image_item_1">
             <img
               class="image_item"
               src="img_category_index/canon_2200x1400.png"
@@ -64,14 +88,14 @@
           </div>
         </article>
         <div class="item__line"></div>
-        <article class="item">
+        <article class="item item_2">
           <div class="item__headline">
             <h3>Studier</h3>
             <div class="btn__category">
               <button class="cta">Læs mere</button>
             </div>
           </div>
-          <div class="category__image">
+          <div class="category__image image_item_2">
             <img
               class="image_item"
               src="/case_work_T07/img_category_index/green_screen.png"
@@ -80,14 +104,14 @@
           </div>
         </article>
         <div class="item__line"></div>
-        <article class="item">
+        <article class="item item_3">
           <div class="item__headline">
             <h3>Virtuel Reality</h3>
             <div class="btn__category">
               <button class="cta">Læs mere</button>
             </div>
           </div>
-          <div class="category__image">
+          <div class="category__image image_item_3">
             <img
               class="image_item"
               src="/case_work_T07/img_category_index/green_screen.png"
@@ -97,7 +121,7 @@
         </article>
         <div class="item__line"></div>
 
-        <article class="item">
+        <article class="item item_4">
           <div class="item__headline">
             <h3>
               Adaptere
@@ -110,7 +134,7 @@
           </div>
           <div class="category__image">
             <img
-              class="image_item"
+              class="image_item image_item_4"
               src="/case_work_T07/img_category_index/adapter.png"
               alt="billede af et Canon Camera"
             />
@@ -118,14 +142,14 @@
         </article>
 
         <div class="item__line"></div>
-        <article class="item">
+        <article class="item item_5">
           <div class="item__headline">
             <h3>Raspberry Pie</h3>
             <div class="btn__category">
               <button class="cta">Læs mere</button>
             </div>
           </div>
-          <div class="category__image">
+          <div class="category__image image_item_5">
             <img
               class="image_item"
               src="/case_work_T07/img_category_index/respary_pie.png"
@@ -134,56 +158,62 @@
           </div>
         </article>
         <div class="item__line"></div>
-        <article class="item">
+        <article class="item item_6">
           <div class="item__headline">
             <h3>Kurser</h3>
-            <div class="btn__category">
-              <button class="cta">Læs mere</button>
-            </div>
           </div>
-          <div class="category__image">
+          <div class="category__image image_item_6">
             <img
               class="image_item"
               src="/case_work_T07/img_category_index/kurser.png"
               alt="billede af et Canon Camera"
             />
           </div>
+          <div class="btn__category">
+            <button class="cta">Læs mere</button>
+          </div>
         </article>
+
+        <div class="item__line"></div>
       </section>
       <article class="contact__container">
         <h1>Kontakt</h1>
-        <div class="contact__images">
-          <article class="contact__1">
-            <img
-              src="foto_kontakt/frederik_lehmann.webp"
-              alt="Lab Ansvarlige frederik Lehmann"
-            />
-          </article>
-          <article class="contact__2">
-            <img
-              src="foto_kontakt/Luca-fusco.webp"
-              alt="Lab Ansvarlige Luca Fusco"
-            />
-          </article>
+        <!-- <div class="contact__images">-->
+        <article class="contact__1">
+          <img
+            src="foto_kontakt/Luca-fusco.webp"
+            alt="Lab Ansvarlige frederik Lehmann"
+          />
+        </article>
+        <article class="contact__2">
+          <img
+            src="foto_kontakt/Luca-fusco.webp"
+            alt="Lab Ansvarlige Luca Fusco"
+          />
+        </article>
 
-          <article class="contact__3">
-            <img
-              src="foto_kontakt/simon-benjamin-christensen.webp"
-              alt="Lab Ansvarlige Simon Benjamin Christensen"
-            />
-          </article>
-        </div>
+        <article class="contact__3">
+          <img
+            src="foto_kontakt/simon-benjamin-christensen.webp"
+            alt="Lab Ansvarlige Simon Benjamin Christensen"
+          />
+        </article>
+        <!--   </div> -->
         <article class="contact__info">
           <ul class="info__1">
             <li>Frederick Hansen</li>
             <li>Lab Ansvarlig</li>
             <li>+45 12 34 56 78</li>
           </ul>
+        </article>
+        <article class="contact__info_2">
           <ul class="info__2">
             <li>Luca Fresco</li>
             <li>Lab Ansvarlig</li>
             <li>+45 12 34 56 78</li>
           </ul>
+        </article>
+        <article class="contact__info_3">
           <ul class="info__3">
             <li>Simon Benjamin</li>
             <li>Lab Ansvarlig</li>
@@ -198,7 +228,50 @@
         />
       </article>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <h2>KEA - Københavns Erhvervsakademi</h2>
+      <div class="top_kolon">
+        <p>Guldbergsgade 29N</p>
+        <p>2200 København N</p>
+      </div>
+      <div class="top_2">
+        <h3>Du skal ikke bare vide. Du skal kunne.</h3>
+      </div>
+
+      <div class="kolon_1">
+        <h2>Vejledning</h2>
+        <ul>
+          <li>Studieadministrationen</li>
+          <li>Studie- og Karrierevejledning</li>
+          <li>SPS (specialpædagogisk støtte)</li>
+          <li>SU-vejledning</li>
+          <li>Praktik</li>
+        </ul>
+      </div>
+
+      <div class="kolon_2">
+        <h2>Relevante links</h2>
+        <ul>
+          <li>KEA Webmail</li>
+          <li>KEA Bibliotek</li>
+          <li>Itslearning</li>
+          <li>Fag- og modulkatalog</li>
+          <li>Studieaktivitetsmodel</li>
+          <li>PARIS-aftalen</li>
+          <li>Ordensregler</li>
+        </ul>
+      </div>
+
+      <div class="kolon_3">
+        <h2>Praktisk info</h2>
+        <ul>
+          <li>Cookies og privatliv</li>
+          <li>Persondatapolitik</li>
+          <li>Tilgængelighedserklæring</li>
+          <li>Find vej på KEA</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
 
